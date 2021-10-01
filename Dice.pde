@@ -40,8 +40,6 @@
           else{
             num = 6;
           }
-          
-          if (num == 1){
             
           
           //your code here
@@ -50,6 +48,48 @@
       {
           fill(255, 255, 255);
           rect(myX, myY, 100, 100);
-          //your code here
+          if (num == 1){
+            fill(0);
+            ellipse(myX+50, myY+50, 10, 10);
+          }
+          else if (num == 2){
+            fill(0);
+            ellipse(myX+33, myY+33, 10, 10);
+            ellipse(myX+67, myY+67, 10, 10);
+          }
+          else if(num == 3){
+            fill(0);
+            ellipse(x+25, y+25, 10, 10);            
+            ellipse(x+50, y+50, 10, 10);
+            ellipse(x+75, y+75, 10, 10);
+          }
+          else if(num == 4){
+            fill(0);
+            ellipse(x+25, y+25, 10, 10);
+            ellipse(x+75, y+25, 10, 10);
+            ellipse(x+25, y+75, 10, 10);
+            ellipse(x+75, y+75, 10, 10);
+          }
+          else if(num == 5){
+            fill(0);
+            ellipse(x+25, y+25, 10, 10);
+            ellipse(x+75, y+25, 10, 10);
+            ellipse(x+25, y+75, 10, 10);
+            ellipse(x+75, y+75, 10, 10);
+            ellipse(x+50, y+50, 10, 10);
+          }
+          else{
+            fill(0);
+            ellipse(x+33, y+25, 10, 10);
+            ellipse(x+33, y+50, 10, 10);
+            ellipse(x+33, y+75, 10, 10);
+            ellipse(x+67, y+25, 10, 10);
+            ellipse(x+67, y+50, 10, 10);
+            ellipse(x+67, y+75, 10, 10);
+          }
+            
+          
+          
+          
       }
   }
