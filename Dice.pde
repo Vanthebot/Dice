@@ -6,6 +6,8 @@ void setup()
   }
   void draw()
   {
+    background(255);
+    int sum = 0;
       for(int y = 40; y < 600; y+=120)
       {
         for(int x = 100; x < 600; x+=120)
@@ -13,8 +15,12 @@ void setup()
           Die bob = new Die(x,y);
           bob.roll();
           bob.show();//your code here
+          sum = sum + bob.num;
+    
         }
       }
+      fill(0);
+      text("Total: " + sum, 20, 700);
   }
   void mousePressed()
   {
@@ -103,9 +109,5 @@ void setup()
             ellipse(myX+67, myY+50, 10, 10);
             ellipse(myX+67, myY+75, 10, 10);
           }
-            
-          
-          
-          
       }
   }
