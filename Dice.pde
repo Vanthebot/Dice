@@ -1,12 +1,11 @@
 void setup()
   {
     size(800,800);
-    //background(0);
       noLoop();
   }
   void draw()
   {
-    background(255);
+    background(0);
     int sum = 0;
       for(int y = 40; y < 600; y+=120)
       {
@@ -16,11 +15,9 @@ void setup()
           bob.roll();
           bob.show();//your code here
           sum = sum + bob.num;
-    
         }
       }
-      fill(0);
-      text("Total: " + sum, 20, 700);
+      text("Total: " + sum, 10, 700);
   }
   void mousePressed()
   {
@@ -63,9 +60,9 @@ void setup()
       }
       void show()
       {
-        int r = (int)(Math.random()*256)+50;
-        int g = (int)(Math.random()*256)+50;
-        int b = (int)(Math.random()*256)+50;
+        int r = (int)(Math.random()*256)+10;
+        int g = (int)(Math.random()*256)+10;
+        int b = (int)(Math.random()*256)+10;
         
           fill(r, g, b);
           strokeWeight(3);
@@ -108,6 +105,6 @@ void setup()
             ellipse(myX+67, myY+25, 10, 10);
             ellipse(myX+67, myY+50, 10, 10);
             ellipse(myX+67, myY+75, 10, 10);
-          }
+          }     
       }
   }
