@@ -1,6 +1,6 @@
 void setup()
   {
-    size(800,710);
+    size(800,610);
       noLoop();
   }
   void draw()
@@ -17,7 +17,7 @@ void setup()
           sum = sum + bob.num;
         }
       }
-      text("Total: " + sum, 10, 700);
+      text("Total: " + sum, 10, 600);
   }
   void mousePressed()
   {
